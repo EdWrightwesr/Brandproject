@@ -1,0 +1,88 @@
+.pagination-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.pagination li{
+  background-color: lightseagreen;
+}
+
+.pagination li:first-of-type a {
+  border-left-width: 1px;
+}
+
+.pagination li a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a{
+  font-weight: 300;
+  padding-top: 1px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.25);
+  border-left-width: 0;
+  min-width: 44px;
+  min-height: 44px;
+  color: rgba(255,255,255,.85);
+  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, 30%);
+}
+
+.pagination li:first-child a:before{
+  content: "\f100";
+}
+
+.coob{
+  width: 100px;
+  height: 60px;
+  border: 1px solid #000;
+  transition: transform 3s;
+}
+
+.coob:hover{
+  transform: translate(300px) rotate(720deg) ;
+}
+
+.block{
+  display: flex;
+  margin-top: 100px;
+  padding: 100px;
+}
+
+input[type="checkbox"]{
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"]:focus{
+  color: #000;
+  background-color: wheat;
+}
+
+.label{
+  color: #000;
+  background-color: wheat;
+}
+
+.label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: blue;
+  color: aliceblue;
+  padding: 0.5 em;
+  border-bottom: 1px solid white;
+}
+
+section{
+  height: 0;
+  transition: 3s all;
+  overflow: hidden;
+}
+
+#klick:checked ~#content-1
